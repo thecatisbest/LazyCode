@@ -20,8 +20,6 @@ public class Main extends JavaPlugin {
 
     // Config
     public YamlDocument config;
-    // Message
-    public YamlDocument message;
 
     @Override
     public void onEnable() {
@@ -43,13 +41,6 @@ public class Main extends JavaPlugin {
         // Create and update the file
         try {
             config = YamlDocument.create(new File(getDataFolder(), "config.yml"), Objects.requireNonNull(getResource("config.yml")),
-                    GeneralSettings.DEFAULT, LoaderSettings.builder().setAutoUpdate(true).build(),
-                    DumperSettings.DEFAULT, UpdaterSettings.builder().setVersioning(new BasicVersioning("config-version")).build());
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        try {
-            message = YamlDocument.create(new File(getDataFolder(), "message.yml"), Objects.requireNonNull(getResource("message.yml")),
                     GeneralSettings.DEFAULT, LoaderSettings.builder().setAutoUpdate(true).build(),
                     DumperSettings.DEFAULT, UpdaterSettings.builder().setVersioning(new BasicVersioning("config-version")).build());
         } catch (IOException ex) {
