@@ -1,0 +1,5 @@
+name: LazyCode
+version: '${project.version}'
+main: me.thecatisbest.LazyCode.Main
+api-version: 1.19
+authors: [ CloudOcean ]

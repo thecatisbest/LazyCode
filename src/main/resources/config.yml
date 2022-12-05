@@ -1,0 +1,15 @@
+# LazyCode Configuration
+config-version: 2
+
+# Placeholder
+# %player% , %player_DisplayName%
+
+Join-Leave:
+  Join-message: "&7[&a+&7] &b%player% &dhas joined the server!"
+  Leave-message: "&7[&a-&7] &b%player% &dhas left the server!"
+  First-Join: "&dThe player &b%player% &dhas joined for the first time!"
+
+Permission:
+  Help-Command: "lazycode.commands.help"
+  Reload-Command: "lazycode.commands.reload"
+  SubCommand-View: "lazycode.subcommand.view"
