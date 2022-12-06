@@ -32,12 +32,12 @@ public class Reload extends SubCommand {
     }
 
     @Override
-    public int maxArguments(){
+    public int maxArguments() {
         return 1;
     }
 
     @Override
-    public boolean canConsoleExecute(){
+    public boolean canConsoleExecute() {
         return true;
     }
 
